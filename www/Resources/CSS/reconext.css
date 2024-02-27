@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300;500;700&display=swap");
+
+:root {
+  /* Reconext Blue */
+  --reconext-blue: #375ea9;
+
+  /* Reconext Green */
+  --reconext-green: #45ae52;
+
+  /* Reconext Green */
+  --reconext-white: #ffffff;
+
+  /* Reconext Light Blue */
+  --reconext-light-blue: #a9bbe2;
+
+  /* Reconext Light Green */
+  --reconext-light-green: #c6e0bc;
+
+  /* Reconext Light Grayblue */
+  --reconext-light-grayblue: #c5ceda;
+
+  /* Reconext Light Graygreen */
+  --reconext-light-graygreen: #cacaca;
+
+  /* Reconext Cool Gray9 */
+  --reconext-cool-gray9: #76777a;
+
+  /* Reconext Cool Gray7 */
+  --reconext-cool-gray7: #97999a;
+}
+
+/* Background color classes */
+
+.bg-reconext-blue-hover:hover {
+  background-color: var(--reconext-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-green-hover:hover {
+  background-color: var(--reconext-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-blue-hover:hover {
+  background-color: var(--reconext-light-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-green-hover:hover {
+  background-color: var(--reconext-light-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-grayblue-hover:hover {
+  background-color: var(--reconext-light-grayblue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-graygreen-hover:hover {
+  background-color: var(--reconext-light-graygreen) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-cool-gray9-hover:hover {
+  background-color: var(--reconext-cool-gray9) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-cool-gray7-hover:hover {
+  background-color: var(--reconext-cool-gray7) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-blue {
+  background-color: var(--reconext-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-green {
+  background-color: var(--reconext-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-blue {
+  background-color: var(--reconext-light-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-green {
+  background-color: var(--reconext-light-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-grayblue {
+  background-color: var(--reconext-light-grayblue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-light-graygreen {
+  background-color: var(--reconext-light-graygreen) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-cool-gray9 {
+  background-color: var(--reconext-cool-gray9) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.bg-reconext-cool-gray7 {
+  background-color: var(--reconext-cool-gray7) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Text color classes */
+.color-reconext-blue-hover:hover {
+  color: var(--reconext-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-green-hover:hover {
+  color: var(--reconext-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-white-hover:hover {
+  color: var(--reconext-white) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-blue-hover:hover {
+  color: var(--reconext-light-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-green-hover:hover {
+  color: var(--reconext-light-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-grayblue-hover:hover {
+  color: var(--reconext-light-grayblue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-graygreen-hover:hover {
+  color: var(--reconext-light-graygreen) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-cool-gray9-hover:hover {
+  color: var(--reconext-cool-gray9) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-cool-gray7-hover:hover {
+  color: var(--reconext-cool-gray7) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-blue {
+  color: var(--reconext-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-green {
+  color: var(--reconext-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-white {
+  color: var(--reconext-white) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-blue {
+  color: var(--reconext-light-blue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-green {
+  color: var(--reconext-light-green) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-grayblue {
+  color: var(--reconext-light-grayblue) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-light-graygreen {
+  color: var(--reconext-light-graygreen) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-cool-gray9 {
+  color: var(--reconext-cool-gray9) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.color-reconext-cool-gray7 {
+  color: var(--reconext-cool-gray7) !important;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.barlow-light {
+  font-family: "Barlow", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.barlow-medium {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.barlow-bold {
+  font-family: "Barlow", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  font-family: "Barlow", sans-serif;
+  font-style: normal;
+}

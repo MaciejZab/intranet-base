@@ -1,0 +1,125 @@
+version: "3"
+services:
+  www:
+    container_name: www
+    build:
+      context: .
+      dockerfile: ./dockerConfig/www/Dockerfile
+    volumes:
+      - "./www/:/var/www/html"
+    ports:
+      - 80:80
+      - 443:443
+    restart: always
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: mysql
+    image: mysql:latest
+    volumes:
+      - mysql_volume:/var/lib/mysql
+    ports:
+      - 3306:3306
+    restart: always
+    environment:
+      - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+      - MYSQL_ALLOW_EMPTY_PASSWORD=0
+
+  phpmyadmin:
+    container_name: phpmyadmin
+    image: phpmyadmin/phpmyadmin
+    ports:
+      - 8001:80
+    restart: always
+    environment:
+      - PMA_HOST=mysql
+      - PMA_PORT=3306
+      - UPLOAD_LIMIT=1024M
+    depends_on:
+      - mysql
+
+volumes:
+  mysql_volume:
+# version: "3"
+# services:
+#   www:
+#     container_name: www
+#     build:
+#       context: .
+#       dockerfile: ./dockerConfig/www/Dockerfile
+#     volumes:
+#       - "./www/:/var/www/html"
+#     ports:
+#       - 80:80
+#       - 443:443
+#     restart: always
+#     depends_on:
+#       - mysql
+
+#   mysql:
+#     container_name: mysql
+#     image: mysql:latest
+#     volumes:
+#       - mysql_volume:/var/lib/mysql
+#     ports:
+#       - 3306:3306
+#     restart: always
+#     environment:
+#       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+#       - MYSQL_ALLOW_EMPTY_PASSWORD=0
+
+#   phpmyadmin:
+#     container_name: phpmyadmin
+#     image: phpmyadmin/phpmyadmin
+#     ports:
+#       - 8001:80
+#     restart: always
+#     environment:
+#       - PMA_HOST=mysql
+#       - PMA_PORT=3306
+#       - UPLOAD_LIMIT=1024M
+#     depends_on:
+#       - mysql
+
+#   test_www:
+#     container_name: test_www
+#     build:
+#       context: .
+#       dockerfile: ./dockerConfig/www/Dockerfile
+#     volumes:
+#       - "./test_www/:/var/www/html"
+#     ports:
+#       - 81:80
+#     restart: always
+#     depends_on:
+#       - test_mysql
+
+#   test_mysql:
+#     container_name: test_mysql
+#     image: mysql:latest
+#     volumes:
+#       - test_mysql_volume:/var/lib/mysql
+#     ports:
+#       - 3307:3306
+#     restart: always
+#     environment:
+#       - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+#       - MYSQL_ALLOW_EMPTY_PASSWORD=0
+
+#   test_phpmyadmin:
+#     container_name: test_phpmyadmin
+#     image: phpmyadmin/phpmyadmin
+#     ports:
+#       - 8002:80
+#     restart: always
+#     environment:
+#       - PMA_HOST=test_mysql
+#       - PMA_PORT=3307
+#       - UPLOAD_LIMIT=1024M
+#     depends_on:
+#       - test_mysql
+
+# volumes:
+#   mysql_volume:
+#   test_mysql_volume:
