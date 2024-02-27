@@ -2,7 +2,7 @@
 
 1. Adjust variables in .env
 
-MYSQL_ROOT_PASSWORD=#
+- MYSQL_ROOT_PASSWORD=#
 
 2. Setup
 
