@@ -1,7 +1,17 @@
 ## Docker Services
 
+1. Adjust variables in .env
+
+MYSQL_ROOT_PASSWORD=#
+
+2. Setup
+
 - run: docker-compose up -d --build
 - stop and drop: docker-compose down
+
+3. phpMyAdmin
+
+- to access phpMyAdmin use port 8001, for example: http://domain:8001/
 
 ## DbConn PHP Class
 
